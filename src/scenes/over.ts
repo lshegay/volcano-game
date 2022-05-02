@@ -43,7 +43,8 @@ const createScene = (app: PIXI.Application, win = false) => {
     stroke: '#000000',
     strokeThickness: 10,
   });
-  text.x = 40;
+  text.anchor.set(0.5, 0);
+  text.x = STAGE_WIDTH / 2;
   text.y = 50;
   container.addChild(text);
 
