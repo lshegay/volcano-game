@@ -9,7 +9,7 @@ const STAGE_HEIGHT = 1280;
 
 export { STAGE_WIDTH, STAGE_HEIGHT };
 
-const app = new PIXI.Application({ width: 720, height: 1280 });
+const app = new PIXI.Application({ resizeTo: window });
 document.getElementById('app')?.appendChild(app.view);
 
 const gameScene = createScene(app);

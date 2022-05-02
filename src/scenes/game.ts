@@ -3,7 +3,7 @@ import { resizeStage, STAGE_HEIGHT, STAGE_WIDTH } from '../main';
 import createOver from './over';
 
 export const createIngredient = (image: string) => {
-  const ingredient = PIXI.Texture.from(`/assets/${image}.png`);
+  const ingredient = PIXI.Texture.from(`/${image}.png`);
   const sprite = new PIXI.Sprite(ingredient);
   sprite.width = 180;
   sprite.height = 180;
@@ -12,21 +12,21 @@ export const createIngredient = (image: string) => {
 };
 
 export const createBackground = () => {
-  const background = PIXI.Texture.from('/assets/background.png');
+  const background = PIXI.Texture.from('/background.png');
   const sprite = new PIXI.Sprite(background);
 
   return sprite;
 };
 
 export const createTube = () => {
-  const tube = PIXI.Texture.from('/assets/tube.png');
+  const tube = PIXI.Texture.from('/tube.png');
   const sprite = new PIXI.Sprite(tube);
 
   return sprite;
 };
 
 export const createDesk = () => {
-  const desk = PIXI.Texture.from('/assets/desk.png');
+  const desk = PIXI.Texture.from('/desk.png');
   const sprite = new PIXI.Sprite(desk);
   sprite.width = STAGE_WIDTH;
   sprite.height = 250;
@@ -37,7 +37,7 @@ export const createDesk = () => {
 };
 
 export const createIngredients = () => {
-  const desk = PIXI.Texture.from('/assets/ingredients.png');
+  const desk = PIXI.Texture.from('/ingredients.png');
   const sprite = new PIXI.Sprite(desk);
   sprite.width = STAGE_WIDTH - 40;
   sprite.x = 20;
@@ -47,7 +47,7 @@ export const createIngredients = () => {
 };
 
 export const createVolcano = (container: PIXI.Container) => {
-  const volcano = PIXI.Texture.from('/assets/volcano.png');
+  const volcano = PIXI.Texture.from('/volcano.png');
   const sprite = new PIXI.Sprite(volcano);
   sprite.interactive = true;
   sprite.width = STAGE_WIDTH / 3;

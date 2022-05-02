@@ -4,7 +4,7 @@ import createGame, { createBackground, createDesk } from './game';
 import { createBoy } from './over';
 
 export const createButton = () => {
-  const restart = PIXI.Texture.from('/assets/play.png');
+  const restart = PIXI.Texture.from('/play.png');
   const sprite = new PIXI.Sprite(restart);
   sprite.interactive = true;
   sprite.width = STAGE_WIDTH - 100;
@@ -16,7 +16,7 @@ export const createButton = () => {
 };
 
 export const createLogo = () => {
-  const restart = PIXI.Texture.from('/assets/logo.png');
+  const restart = PIXI.Texture.from('/logo.png');
   const sprite = new PIXI.Sprite(restart);
   sprite.interactive = true;
 
